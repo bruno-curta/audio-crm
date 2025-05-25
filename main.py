@@ -21,7 +21,7 @@ def main():
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler('gata_guru.log')
+        logging.FileHandler('audio-crm.log')
     ]
     )
     logger = logging.getLogger(__name__)
@@ -32,6 +32,7 @@ def main():
     supabase_client = SupabaseClient(url, key)
 
     st.title("Audio CRM")
+    st.subheader("Aplicativo para registrar conversas de vendas no CRM")
 
     # Gravação de áudio
     audio_file = st.audio_input("Grave seu áudio", key="audio-input")
