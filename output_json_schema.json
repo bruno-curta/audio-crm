@@ -1,0 +1,47 @@
+{
+    "type": "object",
+    "properties": {
+        "sales_agent_id": {
+            "type": "string",
+            "description": "Identifier for the sales agent handling the lead."
+        },
+        "lead_name": {
+            "type": "string",
+            "description": "The name of the lead."
+        },
+        "lead_phone": {
+            "type": "string",
+            "description": "The phone number of the lead."
+        },
+        "lead_email": {
+            "type": "string",
+            "description": "The email address of the lead."
+        },
+        "conversation_summary": {
+            "type": "string",
+            "description": "A summary of the conversation with the lead."
+        },
+        "temperature": {
+            "type": "string",
+            "description": "Indicates how likely the lead is to close the sale."
+        },
+        "next_step": {
+            "type": "string",
+            "description": "The next step to be taken in the sales process."
+        },
+        "record_type": {
+            "type": "string",
+            "description": "input or update of the lead"
+        }
+        },
+        "required": [
+        "sales_agent_id",
+        "lead_name",
+        "lead_phone",
+        "lead_email",
+        "conversation_summary",
+        "temperature",
+        "next_step",
+        "type"
+        ]
+    }
